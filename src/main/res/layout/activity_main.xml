@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:text="@string/healthbuddy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#DA00FF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="131dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="127dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <Button
+        android:id="@+id/FeverBt"
+        android:layout_width="83dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="Fever"
+        app:layout_constraintEnd_toStartOf="@+id/CrampBt"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/CrampBt"
+        android:layout_width="82dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Cramp"
+        app:layout_constraintEnd_toStartOf="@+id/Headbtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/Headbtn"
+        android:layout_width="90dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Migrane"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/StoBt"
+        android:layout_width="95dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginRight="228dp"
+        android:text="Diarrhea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FeverBt" />
+
+    <Button
+        android:id="@+id/eyeBt"
+        android:layout_width="88dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:text="Pink Eye"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CrampBt" />
+
+    <TextView
+        android:id="@+id/IntroText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:text="@string/press_any_button_to_know_about_the_disease"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoBt" />
+
+    <TextView
+        android:id="@+id/FeverTxt"
+        android:layout_width="371dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/a_fever_is_a_temporary_increase_in_your_body_temperature_often_due_to_an_illness_having_a_fever_is_a_sign_that_something_out_of_the_ordinary_is_going_on_in_your_body_for_an_adult_a_fever_may_be_uncomfortable_but_usually_isn_t_a_cause_for_concern_unless_it_reaches_103_f_39_4_c_or_higher"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="361dp"
+        android:layout_marginEnd="338dp"
+        android:layout_marginRight="338dp"
+        android:text="@string/_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IntroText" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="361dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/male"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/IntroText" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:text="@string/female"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IntroText" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="362dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="@string/good_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IntroText" />
+
+    <TextView
+        android:id="@+id/crampTxt"
+        android:layout_width="406dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/a_cramp_is_a_sudden_involuntary_muscle_contraction_or_overshortening_while_generally_temporary_and_non_damaging_they_can_cause_significant_pain_and_a_paralysis_like_immobility_of_the_affected_muscle_onset_is_usually_sudden_and_it_resolves_on_its_own_over_a_period_of_several_seconds_minutes_or_hours"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoBt" />
+
+    <TextView
+        android:id="@+id/MigTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/migraine_is_a_neurological_condition_that_can_cause_multiple_symptoms_it_s_frequently_characterized_by_intense_debilitating_headaches_symptoms_may_include_nausea_vomiting_difficulty_speaking_numbness_or_tingling_and_sensitivity_to_light_and_sound_migraines_often_run_in_families_and_affect_all_ages"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoBt" />
+
+    <TextView
+        android:id="@+id/DiTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/diarrhea_is_loose_watery_stools_bowel_movements_you_have_diarrhea_if_you_have_loose_stools_three_or_more_times_in_one_day_acute_diarrhea_is_diarrhea_that_lasts_a_short_time_it_is_a_common_problem_it_usually_lasts_about_one_or_two_days_but_it_may_last_longer"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoBt" />
+
+    <TextView
+        android:id="@+id/eyeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="@string/pink_eye_conjunctivitis_is_the_inflammation_or_infection_of_the_transparent_membrane_that_lines_your_eyelid_and_eyeball_it_s_characterized_by_redness_and_a_gritty_sensation_in_your_eye_along_with_itching_often_a_discharge_forms_a_crust_on_your_eyelashes_during_the_night"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoBt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
